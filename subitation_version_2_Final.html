@@ -730,8 +730,11 @@
 
       function blankPage(){
         if (speech) speech.cancel();
-        document.body.innerHTML = '';
-        document.body.style.background = '#fff';
+        expressionEl.textContent = '\u00a0';
+        selectionEl.textContent = '';
+        pickedEl.textContent = '';
+        selectedTile = null;
+        showScreen('index');
       }
     })();
   </script>
